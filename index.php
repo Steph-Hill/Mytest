@@ -1,19 +1,22 @@
 <?php
 
-   echo "Hello Mon Stéphen ","</br>","</br>";
-
-    $mysqli = new mysqli("localhost", "root", "", "monpropreprojet");
-
-    $result = $mysqli->query("SELECT * FROM messages ORDER BY ID LIMIT 3");
+          Include("config.php");
 
 
+  /* echo "Hello Mon Stéphen ","</br>","</br>";*/
 
-    foreach ($result as $message) {
+ 
+
+    $result = $mysqli->query("SELECT * FROM mycreation ORDER BY ID ");
 
 
-        echo "alias","</br>";
-    }
-      echo "choooooo";
+    var_dump($rowmycreation);
+    /*foreach ($result as $mycreation) {
+
+
+        //echo $rowmycreation["nom"],"</br>";
+    }*/
+   
 
 
 
